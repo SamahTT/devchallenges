@@ -10,6 +10,7 @@ body {
 }
 
 .nav {
+    height: 100px;
     display: flex;
     align-items: center;
     padding-left: 2em;
@@ -18,20 +19,16 @@ body {
 }
 
 .container {
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img {
+.container > *{
     width: 40%;
-    margin-right: 2em;
 }
 
-.text-div {
-    width: 40%;
-}
 
 h1 {
     font-size: 64px;
@@ -58,7 +55,20 @@ button {
 }
 
 .attribution {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
     color: #BDBDBD;
-    text-align: center;
     font-family: 'Montserrat';
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+    .container > *{
+        width: 100%;
+    }
 }
