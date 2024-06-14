@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+:root {
+    --color-purple-1: #652CD1;
+    --color-purple-2: #845EEE;
+    --color-dark-1: #121826;
+    --color-dark-2: #212936;
+    --color-dark-3: #394150;
+    --color-dark-4: #4D5562;
+    --color-gray: #A1A1A9;
+    --color-light: #E5E7EB;
+}
+
+.container {
+    background: var(--color-dark-1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: max(40%, 20em);
+    height: fit-content;
+    background: var(--color-dark-2);
+    border-radius: 15px;
+    border: 1px solid var(--color-dark-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.form-content{
+    width: 80%;
+}
+
+.form-content > *{
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.text-input{
+    width: 70%;
+    height: 2em;
+    background: var(--color-dark-2);
+    border: 3px solid var(--color-dark-4);
+    border-radius: 15px;
+}
+
+.cont-btn{
+    background: linear-gradient(to bottom, var(--color-purple-2), var(--color-purple-1));
+    border-radius: 1.7em;
+    border: 0;
+    padding: 10px 20px;
+    color: var(--color-light);
+}
+
+h1, p{
+    color: var(--color-light);
+}
+
+label{
+    color: var(--color-gray);
+}
